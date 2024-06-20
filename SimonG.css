@@ -1,0 +1,64 @@
+body {
+    text-align: center;
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 2.5rem; /*rem is the relative unit, which set according to the size of the document(webpage)*/
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+/*New Functionality*/
+
+/*For screens smaller than 600px */
+ @media (max-width: 600px) {
+    .btn-container {
+      max-width: 400px;
+    }
+    .btn {
+      width: 80px;
+      height: 80px;
+    }
+  } 
+  /* For screens smaller than 400px */
+  @media (max-width: 400px) {
+    .btn-container {
+      max-width: 300px;
+    }
+    .btn {
+      width: 60px;
+      height: 60px;
+    }
+  } 
+
+
+.yellow {
+    background-color: #f99b45;
+}
+
+.red {
+    background-color: #d95980;
+}
+
+.green {
+    background-color: #819ff9;
+}
+
+.purple {
+    background-color: #63aac0;
+}
+
+.flash{
+    background-color: black;   /*jbb game start hogyi, button flash hogya with white color*/
+}
+
+.userflash{
+    background-color: red;  /*jbb user uss phrases mai click krregya uss prr then it flash with red color.*/
+}
